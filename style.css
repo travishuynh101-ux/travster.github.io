@@ -1,0 +1,496 @@
+@font-face {
+    font-family: 'w95f';
+    src: url('fonts/w95f.woff2') format('woff2'),
+        url('fonts/w95f.woff') format('woff');
+}
+
+body,
+body * {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    background: rgb(16, 15, 17);
+    overflow-x: hidden;
+}
+
+.window {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    position: fixed;
+
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+
+    box-shadow: 2px 2px 0px #000;
+
+    font-family: "MS Sans Serif", sans-serif;
+    box-shadow: 0 0px 100px rgba(255, 255, 255, 0.1);
+}
+
+
+.innerWindow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    background: #f1edd9;
+
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    padding: 10px;
+
+    min-height: 0;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    box-shadow: 2px 2px 0px black;
+}
+
+.gallerywrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.gallerywrapper .gallery {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.gallery img {
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    box-shadow: 2px 2px 0px black;
+}
+
+#folder1,
+#folder2,
+#folder3,
+#folder4 {
+    overflow: auto;
+    width: 1000px;
+    height: 800px;
+}
+
+.titlebar {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: white;
+
+    padding: 5px 8px;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    display: flex;
+    flex: 0 0 auto;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+
+    padding: 4px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.window-content {
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+    background: #c0c0c0;
+
+    border-top: 2px solid #808080;
+    z-index: 20;
+}
+
+.topsection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.introtext {
+    margin-right: 10px;
+    width: 100%;
+    max-width: 450px;
+
+    margin-left: auto;
+    display: block;
+}
+
+.imgWelcome {
+    transform: rotate(-25deg);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+
+    position: relative;
+    z-index: 10;
+
+    display: block;
+
+}
+
+.introtext h1 {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.introtext p {
+    line-height: 1.8;
+    font-size: 22px;
+    width: 100%;
+}
+
+.updates {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.updates h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #dda939c0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.updates .update {
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.abouttext {
+    margin-left: 40px;
+    margin-right: 10px;
+    width: 50%;
+}
+
+.abouttext h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+
+#folder4 .footer {
+    font-size: 15px;
+    margin-top: 90px;
+}
+
+header {
+    color: rgb(201, 201, 201);
+
+    text-align: left;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+#quote {
+    font-family: 'w95f', 'MS Sans Serif', sans-serif;
+    text-decoration: underline;
+
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 45px;
+
+    position: absolute;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 50px 15px 100px;
+
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+#menulist {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+#menulist li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+}
+
+main {
+    text-align: left;
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+
+    font-size: 25px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menulist {
+    display: flex;
+    gap: 30px;
+}
+
+.about .innerWindow,
+.creatives .innerWindow {
+    display: block;
+}
+
+.about .introtext {
+    margin-left: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.about .interests,
+.about .extras {
+    margin-left: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-top: 2px dotted black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.desktop-icon {
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'MS Sans Serif', sans-serif;
+}
+
+.desktop-icon img {
+    width: 150px;
+}
+
+.desktop-icon:hover {
+    background-color: rgba(0, 0, 128, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.doto {
+    width: 100%;
+    max-width: 300px;
+    height: 20%;
+    display: block;
+    z-index: -100;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    #menulist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        right: 20px;
+    }
+
+    #menulist.active {
+        display: flex;
+    }
+}
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -1000px;
+    }
+}
+
+#mobile-popup {
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 300px;
+
+    background: #c0c0c0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+
+    padding: 10px;
+    text-align: center;
+
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 14px;
+
+    display: none;
+    z-index: 9999;
+}
+
+#mobile-popup button {
+    margin-left: 10px;
+    padding: 2px 8px;
+
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    background: #c0c0c0;
+    cursor: pointer;
+}
+
+#mobile-popup button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+
+@media (max-width: 768px) {
+
+    #mobile-popup {
+        display: block;
+    }
+
+    .introtext p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .introtext {
+        align-items: flex-start;
+        text-align: left;
+        margin: 20px;
+    }
+
+    .window {
+        position: relative;
+        height: auto;
+    }
+
+    .innerWindow {
+        min-height: auto;
+    }
+
+    .subtext {
+        padding: 15px;
+    }
+
+    .introtext {
+        margin: 15px;
+    }
+
+    .imgWelcome {
+        position: relative;
+        transform: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 100px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .window-content,
+    .innerWindow {
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

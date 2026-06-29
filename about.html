@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>bello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about">
+    <img class="doto" src="images/gallery/fun/doto.png" draggable="false" alt="blehh">
+    <canvas id="stars"></canvas>
+    <div class="window">
+        <div class="titlebar">
+            C:\desktop\about
+        </div>
+        <div id="windowcontent">
+
+            <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+                <ul id="menulist" style="max-height: 0px;">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="creatives.html">creatives</a></li>
+                </ul>
+            </nav>
+
+            <div class="innerWindow">
+                <div class="desktop-icon" onclick="openWindow('folder1')">
+                    <img src="images/folder.png" draggable="false" alt="Folder">
+                    <p>about me</p>
+
+                </div>
+                <div class="desktop-icon" onclick="openWindow('folder2')">
+                    <img src="images/folder.png" draggable="false" alt="Folder">
+                    <p>favorites</p>
+                </div>
+                <div class="desktop-icon" onclick="openWindow('folder3')">
+                    <img src="images/folder.png" draggable="false" alt="Folder">
+                    <p>tools</p>
+                </div>
+            </div>
+
+            <div id="folder1" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\about\about me</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder1')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="abouttext">
+                        <h1>about</h1>
+                        <p>hello im travis, a second year student at virginia tech studying aerospace engineering
+                            and i like
+                            to create things sometimes! </p>
+                        <hr>
+                        <h2>other interests</h2>
+                        <ul>
+                            <li>skateboarding</li>
+                            <li>building random stuff</li>
+                            <li>collecting physical media</li>
+                            <li>working on cars</li>
+                            <li>fashion</li>
+                        </ul>
+                        <hr>
+                        <h2>language proficiency</h2>
+                        <p>conversational & learning vietnamese, learning japanese</p>
+                        <hr>
+                        <h2>development</h2>
+                        <p>somewhat knowledgeable in HTML/CSS, javascript, java, learning python</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="folder2" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\about\favorites</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder2')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="abouttext">
+                        <h1>favorites</h1>
+                        <p>here are some of my favorite things :D</p>
+                        <h2>artists</h2>
+                        <ul>
+                            <li>psyqui</li>
+                            <li>zutomayo</li>
+                            <li>jamie paige</li>
+                            <li>joji</li>
+                        </ul>
+                        <hr>
+                        <h2>anime</h2>
+                        <ul>
+                            <li>umamusume</li>
+                            <li>bocchi the rock</li>
+                            <li>gurren lagann</li>
+                        </ul>
+                        <hr>
+                        <h2>manga</h2>
+                        <ul>
+                            <li>ruri dragon</li>
+                            <li>umamusume cingray</li>
+                            <li>girls last tour</li>
+                        </ul>
+                        <hr>
+                        <h2>games</h2>
+                        <ul>
+                            <li>cyberpunk 2077</li>
+                            <li>red dead redemption 2</li>
+                            <li>omori</li>
+                            <li>oneshot</li>
+                            <li>the walking dead telltale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="folder3" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\about\tools</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder3')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="abouttext">
+                        <h1>tools</h1>
+                        <h2>software</h2>
+                        <p>clip studio paint, photoshop, lightroom, ditherista</p>
+                        <hr>
+                        <h2>photography</h2>
+                        <p>fujifilm xe4, 8mm fisheye, 12mm, 35mm, 50mm, disposable camera lens, godox flash</p>
+                        <hr>
+                        <h2>drawing</h2>
+                        <p>ipad air, tourbox elite plus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

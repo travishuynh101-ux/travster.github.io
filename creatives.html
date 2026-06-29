@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>bello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="creatives">
+    <img class="doto" src="images/gallery/fun/doto.png" draggable="false" alt="blehh">
+    <canvas id="stars"></canvas>
+    <div class="window">
+        <div class="titlebar">
+            C:\desktop\creatives
+        </div>
+
+        <div id="windowcontent">
+            <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+                <ul id="menulist" style="max-height: 0px;">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="creatives.html">creatives</a></li>
+                </ul>
+            </nav>
+
+            <div class="innerWindow">
+
+                <div class="desktop-icons">
+                    <div class="desktop-icon" onclick="openWindow('folder1')">
+                        <img src="images/folder.png" draggable="false" alt="Folder">
+                        <p>art</p>
+                    </div>
+                    <div class="desktop-icon" onclick="openWindow('folder2')">
+                        <img src="images/folder.png" draggable="false" alt="Folder">
+                        <p>photography</p>
+                    </div>
+                    <div class="desktop-icon" onclick="openWindow('folder3')">
+                        <img src="images/folder.png" draggable="false" alt="Folder">
+                        <p>graphic_design</p>
+                    </div>
+                    <div class="desktop-icon" onclick="openWindow('folder4')">
+                        <img src="images/folder.png" draggable="false" alt="Folder">
+                        <p>engineering_projects</p>
+                    </div>
+                </div>
+            </div>
+            <div id="folder1" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\creatives\art</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder1')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="gallerywrapper">
+                        <div class="gallery">
+                            <img src="images/gallery/art/ayabemisc.png">
+                            <img src="images/gallery/art/Illustration55_1.png">
+                            <img src="images/gallery/art/Illustration58_0.png">
+                        </div>
+                        <div class="gallery">
+                            <img src="images/gallery/art/カフェ.png">
+                            <img src="images/gallery/art/フォークイン.png">
+                            <img src="images/gallery/art/gilberta.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="folder2" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\creatives\photography</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder2')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="gallerywrapper">
+                        <div class="gallery">
+                            <img src="images/gallery/photo/DSCF7734.jpg">
+                            <img src="images/gallery/photo/DSCF7731.jpg">
+                            <img src="images/gallery/photo/DSCF7680.jpg">
+                            <img src="images/gallery/photo/DSCF7661.jpg">
+                        </div>
+                        <div class="gallery">
+                            <img src="images/gallery/photo/DSCF7672.jpg">
+                            <img src="images/gallery/photo/DSCF7670.jpg">
+                            <img src="images/gallery/photo/DSCF7662.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="folder3" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\creatives\graphic_design</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder3')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="gallerywrapper">
+                        <div class="gallery">
+                            <img src="images/gallery/graphic/IMG_7256_textured.jpg">
+                            <img src="images/gallery/graphic/a.jpg">
+                            <img src="images/gallery/graphic/a.jpg">
+                        </div>
+                        <div class="gallery">
+                            <img src="images/gallery/graphic/a.jpg">
+                            <img src="images/gallery/graphic/a.jpg">
+                            <img src="images/gallery/graphic/a.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="folder4" class="window hidden">
+                <div class="titlebar">
+                    <span>C:\desktop\creatives\engineering_projects</span>
+                    <div class="window-buttons">
+                        <button onclick="closeWindow('folder4')">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="gallerywrapper">
+                        <div class="gallery">
+                            <img src="images/gallery/graphic/a.jpg" alt="go kart">
+                            <h1>go kart</h1>
+                            <p>status: front-end broken, never getting done</p>
+                            <p>theoretical top speed: 60 mph</p>
+                            <p>go kart with custom welded frame and built engine. unfortunately, i crashed it on a test
+                                drive and dont have access to a welder anymore. EXTREMELY SCARY TO DRIVE.</p>
+                        </div>
+                        <div class="gallery">
+                            <img src="images/gallery/graphic/a.jpg" alt="L1 cert rocket">
+                            <h1>L1 cert rocket</h1>
+                            <p>status: not yet launched</p>
+                            <p>theoretical apogee: 509 meters; theoretical max velocity: 122 m/s</p>
+                            <p>custom built rocket, designed in openrocket. super janky hopefully it doesnt explode.</p>
+                        </div>
+                    </div>
+                    <footer class="footer">i swear future projects arent going to be as janky and actually finished.</footer>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
