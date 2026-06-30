@@ -69,14 +69,16 @@ function openWindow(id) {
   win.classList.remove("hidden");
 
   if (window.innerWidth > 768) {
-    const maxX = window.innerWidth - 1200;
-    const maxY = window.innerHeight - 1100;
+    const rect = win.getBoundingClientRect();
 
-    const randomX = Math.random() * maxX;
-    const randomY = Math.random() * maxY;
+        const maxX = window.innerWidth - rect.width;
+        const maxY = window.innerHeight - rect.height;
 
-    win.style.left = randomX + "px";
-    win.style.top = randomY + "px";
+        const randomX = Math.random() * Math.max(0, maxX);
+        const randomY = Math.random() * Math.max(0, maxY);
+
+        win.style.left = randomX + "px";
+        win.style.top = randomY + "px";
   } else {
     
     win.style.top = "10px";
