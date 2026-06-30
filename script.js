@@ -69,6 +69,7 @@ function openWindow(id) {
   win.classList.remove("hidden");
 
   if (window.innerWidth > 768) {
+     win.style.display = "block";
     const rect = win.getBoundingClientRect();
 
         const maxX = window.innerWidth - rect.width;
