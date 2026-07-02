@@ -41,6 +41,8 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
+    pointer-events: auto;
+
     overflow: hidden;
     position: fixed;
 
