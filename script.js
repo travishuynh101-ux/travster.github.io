@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
   //stars
   const canvas = document.getElementById("stars");
   const ctx = canvas.getContext("2d");
@@ -149,4 +148,3 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleMenu() {
     document.getElementById("menulist").classList.toggle("active");
   }
-}};
